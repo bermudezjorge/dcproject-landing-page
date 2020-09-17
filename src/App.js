@@ -4,6 +4,7 @@ import styled from "styled-components";
 import HeaderSection from "sections/HeaderSection";
 import HomeSection from "sections/HomeSection";
 import ServicesSection from "sections/ServicesSection";
+import AboutUsSection from "sections/AboutUsSection";
 
 const AppCon = styled.div`
   width: 100%;
@@ -20,6 +21,7 @@ export default function App() {
       <HeaderSection />
       <HomeSection />
       <ServicesSection />
+      <AboutUsSection />
     </AppCon>
   );
 }

@@ -8,12 +8,15 @@ const StyledButton = styled.button`
   color: #fff;
   border-radius: 5px;
   font-size: 0.9rem;
+  box-shadow: 0px 7px 16px -7px #1590e9a3;
   font-family: "RobotoSlab";
   font-variation-settings: "wght" 500;
   transition: 0.2s transform;
   &:hover {
     cursor: pointer;
-    transform: translateY(3px);
+    transform: translateY(7px);
+    filter: brightness(0.9);
+    box-shadow: none;
   }
 `;
 

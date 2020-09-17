@@ -31,6 +31,11 @@ const Container = styled.div`
           margin-top: 7rem;
         `;
 
+      case "about-us":
+        return css`
+          margin-top: 7rem;
+        `;
+
       default:
         break;
     }

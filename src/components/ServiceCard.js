@@ -10,8 +10,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  border: 2px solid whitesmoke;
-  transition: 0.3s background;
+  border: 1px solid #e3e5e8;
   margin-left: 1rem;
   position: relative;
   border-radius: 7px;
@@ -19,6 +18,8 @@ const Container = styled.div`
   cursor: pointer;
   &:hover {
     border: none;
+    box-shadow: 0px 33px 33px -16px #00000021;
+    transform: translateY(-7px);
   }
   &:first-of-type {
     margin: 0;
@@ -27,10 +28,8 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 0;
-    filter: brightness(0.5);
+    filter: brightness(0.7);
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 0;
   }
   &:hover > h1 {
@@ -48,7 +47,7 @@ const Img = styled.img`
   width: 7rem;
   height: 7rem;
   border-radius: 10rem;
-  transition: 0.2s all;
+  transition: 0.3s all;
 `;
 const Title = styled.h1`
   font-size: 1.2rem;
