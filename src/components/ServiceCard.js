@@ -10,12 +10,13 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  border: 1px solid whitesmoke;
+  border: 2px solid whitesmoke;
   transition: 0.3s background;
   margin-left: 1rem;
   position: relative;
   border-radius: 7px;
   overflow: hidden;
+  cursor: pointer;
   &:hover {
     border: none;
   }

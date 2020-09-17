@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   background: #0476d0;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border: none;
   color: #fff;
   border-radius: 5px;
+  font-size: 0.9rem;
   font-family: "RobotoSlab";
   font-variation-settings: "wght" 500;
   transition: 0.2s transform;
