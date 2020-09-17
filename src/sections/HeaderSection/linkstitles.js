@@ -1,0 +1,3 @@
+const LINK_TITLES = ["INICIO", "SERVICIOS", "SOBRE NOSOTROS", "CONTACTO"];
+
+export default LINK_TITLES;

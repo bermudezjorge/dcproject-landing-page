@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Header from "components/Header";
-import Home from "components/Home";
+import HeaderSection from "sections/HeaderSection";
+import HomeSection from "sections/HomeSection";
+import ServicesSection from "sections/ServicesSection";
 
 const AppCon = styled.div`
   width: 100%;
@@ -16,8 +17,9 @@ const AppCon = styled.div`
 export default function App() {
   return (
     <AppCon>
-      <Header />
-      <Home />
+      <HeaderSection />
+      <HomeSection />
+      <ServicesSection />
     </AppCon>
   );
 }

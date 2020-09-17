@@ -1,16 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-import bgpic from "assets/img/home.jpg";
-
-const HomeCon = styled.div`
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-`;
+import bgpic from "assets/img/home_img/home.jpg";
 
 const HomeBg = styled.div`
   width: 100%;
@@ -19,17 +9,9 @@ const HomeBg = styled.div`
   top: 0;
   left: 0;
   background-image: url(${bgpic});
+  background-size: cover;
   filter: brightness(0.7);
   z-index: 0;
-`;
-
-const InnerCon = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  z-index: 1;
-  color: #fff;
 `;
 
 const HomeTitle = styled.h1`
@@ -37,6 +19,7 @@ const HomeTitle = styled.h1`
   font-family: "RobotoSlab";
   font-variation-settings: "wght" 700;
   margin: 0;
+  margin-top: 5rem;
 `;
 
 const Hr = styled.hr`
@@ -52,18 +35,8 @@ const HomeSubtitle = styled.h3`
   font-family: "RobotoSlab";
   font-variation-settings: "wght" 400;
   margin: 0;
+  margin-bottom: 5rem;
   text-shadow: -1px 2px 3px #000000aa;
 `;
 
-export default function Home() {
-  return (
-    <HomeCon>
-      <HomeBg />
-      <InnerCon>
-        <HomeTitle>Somos tús freelancers</HomeTitle>
-        <Hr />
-        <HomeSubtitle>Proyectos en CAD. Oficina Virtual</HomeSubtitle>
-      </InnerCon>
-    </HomeCon>
-  );
-}
+export { HomeBg, HomeTitle, Hr, HomeSubtitle };
