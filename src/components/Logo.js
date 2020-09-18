@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const LogoStyled = styled.h1`
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 25px;
   margin: 0;
   font-family: "Roboto-Bold";
   position: relative;

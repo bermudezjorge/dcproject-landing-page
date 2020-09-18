@@ -14,7 +14,7 @@ const ABOUT_US_DATA = [
   },
   {
     title: "Nuestra Meta",
-    paragraph: `Es mirar hacia adelante , el cómo mejorar la vida de las personas
+    paragraph: `Es mirar hacia adelante, el cómo mejorar la vida de las personas
       sean empresas o no, utilizando nuestro apoyo profesional.`,
   },
 ];

@@ -13,7 +13,7 @@ import {
   StyledTextarea,
 } from "./styles";
 
-import CONTACT_DATA from "./contactdata";
+import { CONTACT_DATA, FORM_INFO } from "./contactdata";
 
 export default function ContactSection() {
   return (
@@ -27,27 +27,24 @@ export default function ContactSection() {
         ))}
       </ContactDataContainer>
       <StyledForm>
-        <StyledLabel required>
-          ¿En que podemos ayudarle?
-          <StyledTextarea placeholder="Escribanos su mensaje"></StyledTextarea>
-        </StyledLabel>
-        <StyledLabel required>
-          ¿Quieres adjuntar un archivo?
-          <StyledInput type="file" />
-        </StyledLabel>
-        <StyledLabel>
-          Teléfono de contacto
-          <StyledInput type="number" placeholder="(Opcional)" />
-        </StyledLabel>
-        <StyledLabel required>
-          Email
-          <StyledInput type="email" placeholder="Email al cual responderle" />
-        </StyledLabel>
-        <StyledLabel required>
-          ¿Cual es su nombre?
-          <StyledInput type="text" placeholder="Yo soy Abigail, ¿y tú?" />
-        </StyledLabel>
-        <Button text="contacto" section="contact" />
+        {FORM_INFO.map(({ tag, type, label, placeholder, required }) => {
+          if (tag === "input") {
+            return (
+              <StyledLabel required={required}>
+                {label}
+                <StyledInput type={type} placeholder={placeholder} />
+              </StyledLabel>
+            );
+          } else {
+            return (
+              <StyledLabel required={required}>
+                {label}
+                <StyledTextarea placeholder={placeholder}></StyledTextarea>
+              </StyledLabel>
+            );
+          }
+        })}
+        <Button text="enviar" section="contact" />
       </StyledForm>
     </Layout>
   );

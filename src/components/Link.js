@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const LinkStyled = styled.li`
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   font-family: "Roboto-Regular";
   text-transform: uppercase;

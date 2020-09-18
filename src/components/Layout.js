@@ -64,7 +64,7 @@ const Container = styled.div`
           padding: 2rem 0;
           justify-content: center;
           align-items: center;
-          background: #333333;
+          background: #000;
         `;
 
       default:
