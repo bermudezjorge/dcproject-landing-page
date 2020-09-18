@@ -1,5 +1,5 @@
 const HOME_DATA = {
-  title: "Somos tús freelancers",
+  title: "Somos tus freelancers",
   subtitle: "Proyectos en CAD. Oficina Virtual",
   button: "contactanos",
 };
