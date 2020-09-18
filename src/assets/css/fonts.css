@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "RobotoCondesed-Bold";
+  src: url("../fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondesed";
+  src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url("../fonts/Cabin-VariableFont_wdth,wght.ttf");
+}

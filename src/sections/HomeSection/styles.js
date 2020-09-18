@@ -10,35 +10,36 @@ const HomeBg = styled.div`
   left: 0;
   background-image: url(${bgpic});
   background-size: cover;
-  filter: brightness(0.7);
+  background-attachment: fixed;
+  filter: brightness(0.5);
   z-index: 0;
 `;
 
 const HomeTitle = styled.h1`
-  font-size: 3.3rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 700;
+  font-size: 60px;
+  font-family: "RobotoCondesed-Bold";
+  font-weight: 500;
   margin: 0;
   margin-top: 5rem;
   color: #fff;
 `;
 
 const Hr = styled.hr`
-  width: 12rem;
-  height: 5px;
-  margin: 1.2rem auto;
-  background: #0476d0;
-  border: none;
-  border-radius: 50px;
+  margin: 1.5rem auto 2rem auto;
+  width: 120px;
+  border: 0;
+  border-top: 5px solid #0476d0;
 `;
 
 const HomeSubtitle = styled.h3`
-  font-size: 1.3rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 400;
+  font-size: 24px;
+  font-family: "RobotoCondesed";
+  font-weight: 900;
+  letter-spacing: 2px;
   margin: 0;
-  margin-bottom: 5rem;
-  text-shadow: -1px 1px 3px #000000aa;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 3px #000000a1;
+  opacity: 0.7;
   color: #fff;
 `;
 

@@ -1,27 +1,21 @@
 import React from "react";
-import styled from "styled-components";
 
 import HeaderSection from "sections/HeaderSection";
 import HomeSection from "sections/HomeSection";
 import ServicesSection from "sections/ServicesSection";
 import AboutUsSection from "sections/AboutUsSection";
-
-const AppCon = styled.div`
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow-y: scroll;
-  background-color: #fff;
-`;
+import MostUsedPrograms from "sections/MostUsedPrograms";
+import GallerySection from "sections/GallerySection";
 
 export default function App() {
   return (
-    <AppCon>
+    <>
       <HeaderSection />
       <HomeSection />
       <ServicesSection />
       <AboutUsSection />
-    </AppCon>
+      <MostUsedPrograms />
+      <GallerySection />
+    </>
   );
 }

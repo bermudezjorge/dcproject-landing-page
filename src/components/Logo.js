@@ -3,13 +3,35 @@ import styled from "styled-components";
 
 const LogoStyled = styled.h1`
   color: #fff;
-  font-size: calc(2rem * 10px);
+  font-size: 2rem;
   margin: 0;
   font-weight: bolder;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 400;
+  font-family: "RobotoCondesed-Bold";
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  &:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+  }
 `;
 
 export default function Logo() {
-  return <LogoStyled>DCproject</LogoStyled>;
+  return <LogoStyled>DCProject</LogoStyled>;
 }

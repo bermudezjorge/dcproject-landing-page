@@ -8,17 +8,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0 2rem;
-  border: 1px solid #e3e5e8;
   margin-left: 1rem;
   position: relative;
   border-radius: 7px;
   overflow: hidden;
+  transition: 1s transform;
   cursor: pointer;
   &:hover {
     border: none;
     box-shadow: 0px 33px 33px -16px #00000021;
+    justify-content: center;
     transform: translateY(-7px);
   }
   &:first-of-type {
@@ -28,6 +28,7 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 0;
+    margin-top: 0px;
     filter: brightness(0.7);
     position: absolute;
     z-index: 0;
@@ -44,24 +45,26 @@ const Container = styled.div`
   }
 `;
 const Img = styled.img`
-  width: 7rem;
-  height: 7rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 10rem;
-  transition: 0.3s all;
+  margin-top: 50px;
+  transition: 0.6s all;
 `;
 const Title = styled.h1`
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #000;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 500;
+  font-family: "RobotoCondesed";
+  font-weight: 900;
+  margin: 1rem 0 0 0;
   z-index: 1;
 `;
 const Description = styled.h3`
   width: 80%;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #595959;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 200;
+  font-family: "Cabin";
+  font-variation-settings: "wdth" 100, "wght" 400;
   z-index: 1;
 `;
 

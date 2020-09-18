@@ -11,75 +11,31 @@ const AboutUsContainer = styled.div`
 const AboutUsDataContainer = styled.div`
   width: 100%;
   display: flex;
-`;
-
-const AboutUsDataWrapper = styled.div`
-  width: 50%;
-  height: 300px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
   color: #000;
 `;
 
 const AboutUsDataTitle = styled.h1`
   line-height: 33px;
   margin: 0;
-  font-size: 1.7rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 400;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-family: "RobotoCondesed";
+  font-weight: 900;
 `;
 
 const AboutUsDataParagraph = styled.p`
-  width: 70%;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  font-size: 1rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 300;
-`;
-
-const AboutUsDataShowMore = styled.span`
-  font-size: 0.7rem;
-  font-variation-settings: "wght" 500;
-  color: #0476d0;
-  cursor: pointer;
-`;
-
-const MostUsedTitle = styled.h1`
-  line-height: 33px;
-  margin: 0;
-  font-size: 1.9rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 500;
-`;
-
-const ProgramsUl = styled.ul`
-  width: 70%;
-  display: grid;
-  grid-gap: 3rem 0;
-  grid-template-columns: 50% 50%;
-  text-align: center;
-  list-style: none;
-  margin: 0 auto;
-  margin-top: 3rem;
-`;
-
-const ProgramsLi = styled.li`
-  font-size: 1.5rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 500;
-  color: #000;
+  width: 90%;
+  margin: 1rem auto 3rem 1rem;
+  font-size: 1.1rem;
+  font-family: "Cabin";
+  font-variation-settings: "wdth" 100, "wght" 400;
 `;
 
 export {
   AboutUsContainer,
   AboutUsDataContainer,
-  AboutUsDataWrapper,
   AboutUsDataTitle,
   AboutUsDataParagraph,
-  AboutUsDataShowMore,
-  MostUsedTitle,
-  ProgramsUl,
-  ProgramsLi,
 };

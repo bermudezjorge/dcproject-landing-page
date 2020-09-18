@@ -9,30 +9,28 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 600;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "RobotoCondesed";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
   margin: 0;
   color: #000;
+  text-transform: uppercase;
 `;
 
-const Subtitle = styled.h3`
-  font-size: 0.7rem;
-  font-family: "RobotoSlab";
-  font-variation-settings: "wght" 350;
-  background: #e3e5e8;
-  padding: 0.3rem 0.6rem;
-  margin: 0;
-  margin-top: 0.5rem;
-  border-radius: 10rem;
-  color: #000;
+const Hr = styled.hr`
+  width: 50px;
+  border: 0;
+  border-top: 3px solid #0476d0;
+  margin-top: 1rem;
 `;
 
-export default function SectionTitle({ title, subtitle }) {
+export default function SectionTitle({ title }) {
   return (
     <Container>
       <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      <Hr />
     </Container>
   );
 }

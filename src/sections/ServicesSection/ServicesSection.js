@@ -11,7 +11,7 @@ import SERVICES_DATA from "./servicesdata";
 export default function ServicesSection() {
   return (
     <Layout section="services">
-      <SectionTitle title="Services" subtitle="Nuestras habilidades" />
+      <SectionTitle title="servicios" />
       <ServicesContainer>
         {SERVICES_DATA.map(({ img, title, description }) => (
           <ServiceCard

@@ -10,20 +10,25 @@ const Container = styled.div`
     switch (section) {
       case "header":
         return css`
+          width: 100%;
           height: 90px;
           justify-content: space-between;
           align-items: center;
           padding: 0 4rem;
           background: #000;
           position: relative;
+          position: fixed;
+          top: 0;
+          z-index: 100;
         `;
 
       case "home":
         return css`
-          height: 70vh;
+          height: calc(75vh - 90px);
           position: relative;
           justify-content: center;
           align-items: center;
+          margin-top: 90px;
         `;
 
       case "services":
@@ -32,6 +37,18 @@ const Container = styled.div`
         `;
 
       case "about-us":
+        return css`
+          margin-top: 7rem;
+          background: #f8f7f9;
+          padding: 5rem 0;
+        `;
+
+      case "most-used-programs":
+        return css`
+          margin-top: 7rem;
+        `;
+
+      case "gallery":
         return css`
           margin-top: 7rem;
         `;
@@ -56,6 +73,7 @@ const InnerContainer = styled.div`
         return css`
           display: flex;
           justify-content: space-between;
+          align-items: center;
         `;
 
       default:
