@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "components/Layout";
 import SectionTitle from "components/SectionTitle";
+import Button from "components/Button";
 
 import {
   ContactDataContainer,
@@ -46,6 +47,7 @@ export default function ContactSection() {
           ¿Cual es su nombre?
           <StyledInput type="text" placeholder="Yo soy Abigail, ¿y tú?" />
         </StyledLabel>
+        <Button text="contacto" section="contact" />
       </StyledForm>
     </Layout>
   );

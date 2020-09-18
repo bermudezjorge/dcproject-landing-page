@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyledButton = styled.button`
   background: #0476d0;
-  padding: 1.3rem 2.5rem;
+  padding: 1.2rem 2.5rem;
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -11,14 +11,31 @@ const StyledButton = styled.button`
   font-family: "Cabin";
   font-variation-settings: "wdth" 100, "wght" 500;
   transition: 0.2s transform;
+  text-transform: uppercase;
   &:hover {
     cursor: pointer;
     transform: translateY(7px);
     filter: brightness(0.9);
-    box-shadow: none;
   }
+
+  ${({ section }) => {
+    switch (section) {
+      case "contact":
+        return css`
+          width: auto;
+          margin: 2rem auto 0 auto;
+          &:hover {
+            transform: none;
+            filter: brightness(0.9);
+          }
+        `;
+
+      default:
+        break;
+    }
+  }}
 `;
 
-export default function Button({ text }) {
-  return <StyledButton>{text}</StyledButton>;
+export default function Button({ text, section }) {
+  return <StyledButton section={section}>{text}</StyledButton>;
 }

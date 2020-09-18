@@ -5,13 +5,15 @@ import Button from "components/Button";
 
 import { HomeBg, HomeTitle, Hr, HomeSubtitle } from "./styles";
 
+import HOME_DATA from "./homedata";
+
 export default function HomeSection() {
   return (
     <Layout section="home" background={<HomeBg />}>
-      <HomeTitle>Somos tús freelancers</HomeTitle>
+      <HomeTitle>{HOME_DATA.title}</HomeTitle>
       <Hr />
-      <HomeSubtitle>Proyectos en CAD. Oficina Virtual</HomeSubtitle>
-      <Button text="CONTACTANOS" />
+      <HomeSubtitle>{HOME_DATA.subtitle}</HomeSubtitle>
+      <Button text={HOME_DATA.button} section="home" />
     </Layout>
   );
 }

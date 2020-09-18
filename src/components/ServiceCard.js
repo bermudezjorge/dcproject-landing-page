@@ -27,9 +27,8 @@ const Container = styled.div`
     height: 100%;
     border-radius: 0;
     margin-top: 0px;
-    filter: brightness(0.5);
+    filter: brightness(0.3);
     position: absolute;
-    transition: 0.7s all;
     z-index: 0;
   }
   &:hover > h1 {
@@ -38,12 +37,14 @@ const Container = styled.div`
     transform: scale(1.2);
   }
   &:hover > h3 {
+    margin-top: 2rem;
     transition: 0.5s all;
     color: white;
     transform: scale(1.2);
   }
 `;
 const Img = styled.img`
+  transition: 0.7s all;
   width: 9rem;
   height: 9rem;
   border-radius: 10rem;
