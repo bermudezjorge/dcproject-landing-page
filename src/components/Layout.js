@@ -51,6 +51,8 @@ const Container = styled.div`
       case "gallery":
         return css`
           margin-top: 7rem;
+          background: #f8f7f9;
+          padding: 5rem 0;
         `;
 
       default:
