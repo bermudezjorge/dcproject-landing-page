@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "RobotoCondesed-Bold";
-  src: url("../fonts/RobotoCondensed-Bold.ttf");
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 
 @font-face {
-  font-family: "RobotoCondesed";
-  src: url("../fonts/RobotoCondensed-Light.ttf");
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Cabin";
-  src: url("../fonts/Cabin-VariableFont_wdth,wght.ttf");
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin.ttf");
 }

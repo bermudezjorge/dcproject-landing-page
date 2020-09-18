@@ -16,9 +16,9 @@ const HomeBg = styled.div`
 `;
 
 const HomeTitle = styled.h1`
-  font-size: 60px;
-  font-family: "RobotoCondesed-Bold";
-  font-weight: 500;
+  font-size: 45px;
+  font-family: "Roboto-Bold";
+  font-weight: 900;
   margin: 0;
   margin-top: 5rem;
   color: #fff;
@@ -28,18 +28,18 @@ const Hr = styled.hr`
   margin: 1.5rem auto 2rem auto;
   width: 120px;
   border: 0;
-  border-top: 5px solid #0476d0;
+  border-top: 3px solid #0476d0;
 `;
 
 const HomeSubtitle = styled.h3`
-  font-size: 24px;
-  font-family: "RobotoCondesed";
-  font-weight: 900;
+  font-size: 16px;
+  font-family: "Roboto-Regular";
+  font-weight: 500;
   letter-spacing: 2px;
   margin: 0;
   margin-bottom: 3rem;
   text-shadow: 1px 1px 3px #000000a1;
-  opacity: 0.7;
+  opacity: 0.8;
   color: #fff;
 `;
 

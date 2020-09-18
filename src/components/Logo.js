@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const LogoStyled = styled.h1`
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
-  font-weight: bolder;
-  font-family: "RobotoCondesed-Bold";
+  font-family: "Roboto-Bold";
   position: relative;
   &::before {
     content: "";

@@ -25,45 +25,44 @@ const Container = styled.div`
   &:hover > img {
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    border-radius: 7px;
     margin-top: 0px;
     filter: brightness(0.3);
     position: absolute;
     z-index: 0;
   }
   &:hover > h1 {
-    transition: 0.5s all;
     color: white;
     transform: scale(1.2);
   }
   &:hover > h3 {
     margin-top: 2rem;
-    transition: 0.5s all;
     color: white;
     transform: scale(1.2);
   }
 `;
 const Img = styled.img`
-  transition: 0.7s all;
-  width: 9rem;
-  height: 9rem;
+  transition: 0.6s all;
+  width: 140px;
+  height: 140px;
   border-radius: 10rem;
-  margin-top: 50px;
+  margin-top: 30px;
 `;
 const Title = styled.h1`
-  font-size: 1.6rem;
+  font-size: 20px;
   color: #000;
-  font-family: "RobotoCondesed";
-  font-weight: 900;
-  margin: 1rem 0 0 0;
+  font-family: "Roboto-Regular";
+  margin: 1.5rem 0 0.3rem 0;
+  transition: 0.5s all;
   z-index: 1;
 `;
 const Description = styled.h3`
-  width: 80%;
-  font-size: 1rem;
-  color: #595959;
-  font-family: "Cabin";
-  font-variation-settings: "wdth" 100, "wght" 400;
+  width: 90%;
+  font-size: 14px;
+  color: #000;
+  font-weight: 100;
+  font-family: "Roboto-Thin";
+  transition: 0.5s all;
   z-index: 1;
 `;
 

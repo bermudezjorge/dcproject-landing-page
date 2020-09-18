@@ -41,7 +41,7 @@ const Container = styled.div`
       case "about-us":
         return css`
           ${MarginBetweenSection};
-          background: #f8f7f9;
+          background: #f1f1f1;
           padding: 5rem 0;
         `;
 
@@ -51,7 +51,7 @@ const Container = styled.div`
       case "gallery":
         return css`
           ${MarginBetweenSection};
-          background: #f8f7f9;
+          background: #f1f1f1;
           padding: 5rem 0;
         `;
 

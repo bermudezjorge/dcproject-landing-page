@@ -3,13 +3,12 @@ import styled, { css } from "styled-components";
 
 const StyledButton = styled.button`
   background: #0476d0;
-  padding: 1.2rem 2.5rem;
+  padding: 15px 30px;
   border: none;
   color: #fff;
   border-radius: 5px;
-  font-size: 1rem;
-  font-family: "Cabin";
-  font-variation-settings: "wdth" 100, "wght" 500;
+  font-size: 14px;
+  font-family: "Roboto-Regular";
   transition: 0.2s transform;
   text-transform: uppercase;
   &:hover {

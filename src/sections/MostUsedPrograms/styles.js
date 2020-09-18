@@ -11,9 +11,9 @@ const MostUsedProgramsContainer = styled.div`
 const MostUsedProgramsTitle = styled.h1`
   line-height: 33px;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 24px;
   letter-spacing: 2px;
-  font-family: "RobotoCondesed";
+  font-family: "Roboto-Thin";
   font-weight: 900;
   color: #000;
   margin-top: 1rem;

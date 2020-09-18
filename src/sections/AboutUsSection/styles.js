@@ -19,18 +19,16 @@ const AboutUsDataContainer = styled.div`
 const AboutUsDataTitle = styled.h1`
   line-height: 33px;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 25px;
   letter-spacing: 2px;
-  font-family: "RobotoCondesed";
-  font-weight: 900;
+  font-family: "Roboto-Regular";
 `;
 
 const AboutUsDataParagraph = styled.p`
   width: 90%;
   margin: 1rem auto 3rem 1rem;
-  font-size: 1.1rem;
-  font-family: "Cabin";
-  font-variation-settings: "wdth" 100, "wght" 400;
+  font-size: 16px;
+  font-family: "Roboto-Thin";
 `;
 
 export {
