@@ -27,11 +27,11 @@ export default function ContactSection() {
         ))}
       </ContactDataContainer>
       <StyledForm>
-        <StyledLabel>
+        <StyledLabel required>
           ¿En que podemos ayudarle?
           <StyledTextarea placeholder="Escribanos su mensaje"></StyledTextarea>
         </StyledLabel>
-        <StyledLabel>
+        <StyledLabel required>
           ¿Quieres adjuntar un archivo?
           <StyledInput type="file" />
         </StyledLabel>
@@ -39,11 +39,11 @@ export default function ContactSection() {
           Teléfono de contacto
           <StyledInput type="number" placeholder="(Opcional)" />
         </StyledLabel>
-        <StyledLabel>
+        <StyledLabel required>
           Email
           <StyledInput type="email" placeholder="Email al cual responderle" />
         </StyledLabel>
-        <StyledLabel>
+        <StyledLabel required>
           ¿Cual es su nombre?
           <StyledInput type="text" placeholder="Yo soy Abigail, ¿y tú?" />
         </StyledLabel>

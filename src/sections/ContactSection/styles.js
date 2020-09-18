@@ -9,7 +9,7 @@ const formControl = css`
   font-size: 15px;
   font-family: "Roboto-Regular";
   line-height: 1.42857143;
-  color: #555;
+  color: #000;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -31,6 +31,7 @@ const ContactDataContainer = styled.div`
 const ContactData = styled.p`
   font-size: 15px;
   font-family: "Roboto-Thin";
+  font-weight: 900;
   color: #000;
   margin: 0.3rem 0 0 0;
   &:first-of-type {
@@ -57,11 +58,21 @@ const StyledLabel = styled.label`
   margin-top: 1rem;
   text-align: left;
   font-size: 14px;
-  color: gray;
+  color: #000;
   font-family: "Roboto-Regular";
   &:first-of-type {
     margin-top: 0;
   }
+  ${({ required }) =>
+    required &&
+    css`
+      &::before {
+        content: "*";
+        margin-right: 0.3rem;
+        color: #ed3131;
+        font-family: "Roboto-Bold";
+      }
+    `}
 `;
 
 const StyledInput = styled.input`

@@ -11,7 +11,7 @@ const HomeBg = styled.div`
   background-image: url(${bgpic});
   background-size: cover;
   background-attachment: fixed;
-  filter: brightness(0.3);
+  filter: brightness(0.5);
   z-index: 0;
 `;
 

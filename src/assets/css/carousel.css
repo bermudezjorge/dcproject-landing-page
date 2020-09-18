@@ -5,7 +5,7 @@
   -ms-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   z-index: 2;
   top: 20px;
@@ -34,13 +34,13 @@
   left: 0;
 }
 .carousel .control-prev.control-arrow:before {
-  border-right: 12px solid #000;
+  border-right: 12px solid #fff;
 }
 .carousel .control-next.control-arrow {
   right: 0;
 }
 .carousel .control-next.control-arrow:before {
-  border-left: 12px solid #000;
+  border-left: 12px solid #fff;
 }
 .carousel-root {
   outline: 0;
@@ -101,7 +101,7 @@
   margin-right: 6px;
   white-space: nowrap;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   padding: 2px;
   border-radius: 7px;
   cursor: pointer;
@@ -123,6 +123,7 @@
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  border-radius: 7px;
 }
 .carousel.carousel-slider .control-arrow {
   top: 0;
@@ -131,9 +132,14 @@
   bottom: 0;
   margin-top: 0;
   padding: 5px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
 }
 .carousel.carousel-slider .control-arrow:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: #000;
 }
 .carousel .slider-wrapper {
   overflow: hidden;

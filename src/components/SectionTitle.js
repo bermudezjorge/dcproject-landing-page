@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 900;
   font-family: "Roboto-Regular";
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);

@@ -29,6 +29,7 @@ const AboutUsDataParagraph = styled.p`
   margin: 1rem auto 3rem 1rem;
   font-size: 16px;
   font-family: "Roboto-Thin";
+  font-weight: 900;
 `;
 
 export {
