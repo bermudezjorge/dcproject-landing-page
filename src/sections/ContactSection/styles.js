@@ -48,7 +48,7 @@ const StyledForm = styled.form`
   flex-direction: column;
   background: #f8f7f9;
   padding: 1rem;
-  margin: 3rem auto 5rem auto;
+  margin: 3rem auto 0 auto;
   border-radius: 7px;
 `;
 

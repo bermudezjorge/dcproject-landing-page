@@ -58,6 +58,15 @@ const Container = styled.div`
       case "contact":
         return MarginBetweenSection;
 
+      case "footer":
+        return css`
+          margin-top: 7rem;
+          padding: 2rem 0;
+          justify-content: center;
+          align-items: center;
+          background: #333333;
+        `;
+
       default:
         break;
     }
@@ -76,6 +85,7 @@ const InnerContainer = styled.div`
     switch (section) {
       case "header":
         return css`
+          max-width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;

@@ -7,6 +7,7 @@ import AboutUsSection from "sections/AboutUsSection";
 import MostUsedPrograms from "sections/MostUsedPrograms";
 import GallerySection from "sections/GallerySection";
 import ContactSection from "sections/ContactSection";
+import FooterSection from "sections/FooterSection";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <MostUsedPrograms />
       <GallerySection />
       <ContactSection />
+      <FooterSection />
     </>
   );
 }

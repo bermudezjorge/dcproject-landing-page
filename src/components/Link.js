@@ -11,6 +11,9 @@ const LinkStyled = styled.li`
   font-variation-settings: "wdth" 100, "wght" 400;
   text-transform: uppercase;
   cursor: pointer;
+  &:first-of-type {
+    margin-left: 0;
+  }
 `;
 
 export default function Link({ text }) {
