@@ -1,6 +1,10 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
+const MarginBetweenSection = css`
+  margin-top: 7rem;
+`;
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -32,28 +36,27 @@ const Container = styled.div`
         `;
 
       case "services":
-        return css`
-          margin-top: 7rem;
-        `;
+        return MarginBetweenSection;
 
       case "about-us":
         return css`
-          margin-top: 7rem;
+          ${MarginBetweenSection};
           background: #f8f7f9;
           padding: 5rem 0;
         `;
 
       case "most-used-programs":
-        return css`
-          margin-top: 7rem;
-        `;
+        return MarginBetweenSection;
 
       case "gallery":
         return css`
-          margin-top: 7rem;
+          ${MarginBetweenSection};
           background: #f8f7f9;
           padding: 5rem 0;
         `;
+
+      case "contact":
+        return MarginBetweenSection;
 
       default:
         break;

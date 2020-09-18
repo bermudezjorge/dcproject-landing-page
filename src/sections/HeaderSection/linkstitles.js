@@ -1,3 +1,10 @@
-const LINK_TITLES = ["INICIO", "SERVICIOS", "SOBRE NOSOTROS", "CONTACTO"];
+const LINK_TITLES = [
+  "inicio",
+  "servicios",
+  "sobre nosotros",
+  "programas más utilizados",
+  "galería",
+  "contacto",
+];
 
 export default LINK_TITLES;

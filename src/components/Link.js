@@ -9,6 +9,7 @@ const LinkStyled = styled.li`
   letter-spacing: 2px;
   font-family: "Cabin";
   font-variation-settings: "wdth" 100, "wght" 400;
+  text-transform: uppercase;
   cursor: pointer;
 `;
 

@@ -27,7 +27,7 @@ const Container = styled.div`
     height: 100%;
     border-radius: 0;
     margin-top: 0px;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
     position: absolute;
     transition: 0.7s all;
     z-index: 0;

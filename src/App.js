@@ -6,6 +6,7 @@ import ServicesSection from "sections/ServicesSection";
 import AboutUsSection from "sections/AboutUsSection";
 import MostUsedPrograms from "sections/MostUsedPrograms";
 import GallerySection from "sections/GallerySection";
+import ContactSection from "sections/ContactSection";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <AboutUsSection />
       <MostUsedPrograms />
       <GallerySection />
+      <ContactSection />
     </>
   );
 }
