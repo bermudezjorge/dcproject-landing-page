@@ -23,7 +23,14 @@ export default function HeaderSection() {
     <Layout section="header">
       <Logo>DCproject</Logo>
       <BurguerMenu handleMenu={handleMenu} />
-      <LinkList section="header" showMenu={showMenu} handleMenu={handleMenu} />
+      {(showMenu && window.matchMedia("(max-width: 640px)")).matches ||
+      window.matchMedia("(min-width: 1024px)").matches ? (
+        <LinkList
+          section="header"
+          showMenu={showMenu}
+          handleMenu={handleMenu}
+        />
+      ) : null}
     </Layout>
   );
 }

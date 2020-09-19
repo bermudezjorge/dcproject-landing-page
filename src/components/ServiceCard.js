@@ -23,6 +23,9 @@ const Container = styled.div`
   &:first-of-type {
     margin-left: 0;
   }
+  @media (max-width: 640px) {
+    height: 280px;
+  }
 `;
 const Img = styled.img`
   width: 100%;
