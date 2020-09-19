@@ -285,4 +285,7 @@
   .carousel.carousel-slider {
     width: 100% !important;
   }
+  .carousel.carousel-slider {
+    border-radius: 0;
+  }
 }

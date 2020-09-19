@@ -63,8 +63,8 @@ const StyledLinkList = styled.ul`
 const CloseMenu = styled.div`
   display: none;
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 20px;
+  right: 30px;
   fill: #fff;
   font-family: "Roboto-Bold";
   font-size: 40px;
