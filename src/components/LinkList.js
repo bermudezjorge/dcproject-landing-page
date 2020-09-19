@@ -32,7 +32,7 @@ const StyledLinkList = styled.ul`
             & > li {
               width: 80%;
               margin-left: 0;
-              font-size: 25px;
+              font-size: 22px;
               margin-top: 3rem;
             }
           }
