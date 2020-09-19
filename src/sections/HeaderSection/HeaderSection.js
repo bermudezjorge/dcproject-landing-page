@@ -1,18 +1,14 @@
-import React, { useContext, useState } from "react";
-
-import { LinksDataContext } from "context/linkcontext";
+import React, { useState } from "react";
 
 import Layout from "components/Layout";
 import Logo from "components/Logo";
 import BurguerMenu from "components/BurguerMenu";
 import LinkList from "components/LinkList";
-import Link from "components/Link";
 
 const BODY = document.querySelector("body");
 
 export default function HeaderSection() {
   const [showMenu, setShowMenu] = useState(false);
-  const LINKS = useContext(LinksDataContext);
 
   const handleMenu = (show) => {
     if (show) {
@@ -27,16 +23,7 @@ export default function HeaderSection() {
     <Layout section="header">
       <Logo>DCproject</Logo>
       <BurguerMenu handleMenu={handleMenu} />
-      {showMenu && (
-        <LinkList section="header">
-          <div id="close" onClick={() => handleMenu(false)}>
-            &times;
-          </div>
-          {LINKS.map((text) => (
-            <Link key={text} text={text} />
-          ))}
-        </LinkList>
-      )}
+      <LinkList section="header" showMenu={showMenu} handleMenu={handleMenu} />
     </Layout>
   );
 }

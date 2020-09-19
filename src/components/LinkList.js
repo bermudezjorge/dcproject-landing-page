@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import styled, { css } from "styled-components";
+
+import { LinksDataContext } from "context/linkcontext";
+
+import Link from "components/Link";
 
 const StyledLinkList = styled.ul`
   display: flex;
@@ -14,6 +18,7 @@ const StyledLinkList = styled.ul`
       case "header":
         return css`
           @media (max-width: 640px) {
+            display: none;
             width: 100vw;
             height: 100vh;
             background: #000;
@@ -30,15 +35,6 @@ const StyledLinkList = styled.ul`
               margin-left: 0;
               font-size: 25px;
               margin-top: 3rem;
-            }
-            & > #close {
-              display: block;
-              position: absolute;
-              top: 5px;
-              right: 15px;
-              fill: #fff;
-              font-family: "Roboto-Bold";
-              font-size: 33px;
             }
           }
         `;
@@ -65,6 +61,41 @@ const StyledLinkList = styled.ul`
   }}
 `;
 
-export default function LinkList({ children, section }) {
-  return <StyledLinkList section={section}>{children}</StyledLinkList>;
+const CloseMenu = styled.div`
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  fill: #fff;
+  font-family: "Roboto-Bold";
+  font-size: 33px;
+  @media (max-width: 640px) {
+    display: block;
+  }
+`;
+
+export default function LinkList({ section, showMenu, handleMenu }) {
+  const LINKS = useContext(LinksDataContext);
+  const linkListRef = useRef(null);
+
+  useEffect(() => {
+    if (showMenu && window.matchMedia("(max-width: 640px)")) {
+      linkListRef.current.display = "flex";
+      console.log("flex");
+    } else {
+      linkListRef.current.display = "none";
+      console.log("none");
+    }
+  }, [showMenu]);
+
+  return (
+    <StyledLinkList section={section} ref={linkListRef}>
+      <CloseMenu role="button" onClick={() => handleMenu(false)}>
+        &times;
+      </CloseMenu>
+      {LINKS.map((text) => (
+        <Link key={text} text={text} />
+      ))}
+    </StyledLinkList>
+  );
 }

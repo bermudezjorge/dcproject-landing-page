@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const BurguerMenuStyles = styled.h1`
+const BurguerMenuStyles = styled.div`
   width: 40px;
   height: 3px;
+  display: none;
   background: #fff;
   position: relative;
   &::before {
@@ -23,6 +24,9 @@ const BurguerMenuStyles = styled.h1`
     bottom: -10px;
     left: 0;
     background: #fff;
+  }
+  @media (max-width: 640px) {
+    display: block;
   }
 `;
 
