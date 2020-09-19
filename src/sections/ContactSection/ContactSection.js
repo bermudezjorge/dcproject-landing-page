@@ -20,10 +20,9 @@ import { CONTACT_DATA, FORM_INFO } from "./contactdata";
 export default function ContactSection() {
   const { lang } = useContext(LanguageContext);
 
-  console.log(CONTACT_DATA);
   return (
     <Layout section="contact">
-      <SectionTitle title="contacto" />
+      <SectionTitle title={lang === "es" ? "contacto" : "contact"} />
       <ContactDataContainer>
         {CONTACT_DATA[lang].map(({ important, text }) => (
           <ContactData key={text} important={important}>
@@ -49,7 +48,7 @@ export default function ContactSection() {
             );
           }
         })}
-        <Button text="enviar" section="contact" />
+        <Button text={lang === "es" ? "enviar" : "send"} section="contact" />
       </StyledForm>
     </Layout>
   );

@@ -20,7 +20,7 @@ export default function AboutUsSection() {
   return (
     <Layout section="about-us">
       <AboutUsContainer>
-        <SectionTitle title="sobre nosotros" />
+        <SectionTitle title={lang === "es" ? "sobre nosotros" : "about us"} />
         {ABOUT_US_DATA[lang].map((about) => (
           <AboutUsDataContainer key={about.title}>
             <AboutUsDataTitle>{about.title}</AboutUsDataTitle>

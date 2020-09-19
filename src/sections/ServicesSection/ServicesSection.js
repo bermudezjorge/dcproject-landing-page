@@ -15,7 +15,7 @@ export default function ServicesSection() {
 
   return (
     <Layout section="services">
-      <SectionTitle title="servicios" />
+      <SectionTitle title={lang === "es" ? "servicios" : "services"} />
       <ServicesContainer>
         {SERVICES_DATA[lang].map(({ img, title, description }) => (
           <ServiceCard

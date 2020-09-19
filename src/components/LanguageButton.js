@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
@@ -26,13 +26,21 @@ const StyledButton = styled.button`
 `;
 
 export default function LanguageButton({ lang, setLang }) {
+  const btnRef = useRef(null);
+
   const handleLanguage = () => {
     if (lang === "es") {
       setLang("en");
     } else {
       setLang("es");
     }
+
+    setTimeout(() => btnRef.current.blur(), 2000);
   };
 
-  return <StyledButton onClick={() => handleLanguage()}>{lang}</StyledButton>;
+  return (
+    <StyledButton onClick={() => handleLanguage()} ref={btnRef}>
+      {lang}
+    </StyledButton>
+  );
 }

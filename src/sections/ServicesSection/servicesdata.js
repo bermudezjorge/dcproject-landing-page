@@ -45,7 +45,7 @@ const SERVICES_DATA = {
       img: generacion,
       title: "Plans Generation",
       description:
-        "Elaboramos planos civiles, topográficos, eléctricos y de arquitectura.",
+        "We elaborate civil, topographic, electrical and architectural plans.",
     },
     {
       img: geomatica,
