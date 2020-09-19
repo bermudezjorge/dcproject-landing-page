@@ -14,9 +14,9 @@ export default function FooterSection() {
   return (
     <Layout section="footer">
       <LinkList section="footer">
-        {LINKS.map((text) => (
+        {/* {LINKS.map((text) => (
           <Link key={text} text={text} />
-        ))}
+        ))} */}
       </LinkList>
       <CopyrightText>
         Copyright © 2020 Todos los derechos reservados - DCProject

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { LanguageProvider } from "context/languagecontext";
 
 import HeaderSection from "sections/HeaderSection";
 import HomeSection from "sections/HomeSection";
@@ -10,8 +12,14 @@ import ContactSection from "sections/ContactSection";
 import FooterSection from "sections/FooterSection";
 
 export default function App() {
+  const [lang, setLang] = useState("es");
   return (
-    <>
+    <LanguageProvider
+      value={{
+        lang,
+        setLang,
+      }}
+    >
       <HeaderSection />
       <HomeSection />
       <ServicesSection />
@@ -20,6 +28,6 @@ export default function App() {
       <GallerySection />
       <ContactSection />
       <FooterSection />
-    </>
+    </LanguageProvider>
   );
 }

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled, { css } from "styled-components";
 
 import { LinksDataContext } from "context/linkcontext";
+import { LanguageContext } from "context/languagecontext";
 
 import Link from "components/Link";
 
@@ -75,13 +76,14 @@ const CloseMenu = styled.div`
 
 export default function LinkList({ section, handleMenu }) {
   const LINKS = useContext(LinksDataContext);
+  const { lang } = useContext(LanguageContext);
 
   return (
     <StyledLinkList section={section}>
       <CloseMenu role="button" onClick={() => handleMenu(false)}>
         &times;
       </CloseMenu>
-      {LINKS.map((text) => (
+      {LINKS[lang].map((text) => (
         <Link key={text} text={text} />
       ))}
     </StyledLinkList>

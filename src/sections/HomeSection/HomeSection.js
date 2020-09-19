@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { LanguageContext } from "context/languagecontext";
 
 import Layout from "components/Layout";
 import Button from "components/Button";
@@ -8,12 +10,14 @@ import { HomeBg, HomeTitle, Hr, HomeSubtitle } from "./styles";
 import HOME_DATA from "./homedata";
 
 export default function HomeSection() {
+  const { lang } = useContext(LanguageContext);
+
   return (
     <Layout section="home" background={<HomeBg />}>
-      <HomeTitle>{HOME_DATA.title}</HomeTitle>
+      <HomeTitle>{HOME_DATA[lang].title}</HomeTitle>
       <Hr />
-      <HomeSubtitle>{HOME_DATA.subtitle}</HomeSubtitle>
-      <Button text={HOME_DATA.button} section="home" />
+      <HomeSubtitle>{HOME_DATA[lang].subtitle}</HomeSubtitle>
+      <Button text={HOME_DATA[lang].button} section="home" />
     </Layout>
   );
 }

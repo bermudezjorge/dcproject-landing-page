@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const LinkStyled = styled.li`
+const StyledLink = styled.li`
   color: #fff;
   font-size: 12px;
   margin-left: 1.5rem;
@@ -16,5 +16,5 @@ const LinkStyled = styled.li`
 `;
 
 export default function Link({ text }) {
-  return <LinkStyled>{text}</LinkStyled>;
+  return <StyledLink>{text}</StyledLink>;
 }
