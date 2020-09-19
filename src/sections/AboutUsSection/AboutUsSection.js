@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { LanguageContext } from "context/languagecontext";
 
 import Layout from "components/Layout";
 import SectionTitle from "components/SectionTitle";
@@ -13,11 +15,13 @@ import {
 import ABOUT_US_DATA from "./aboutusdata";
 
 export default function AboutUsSection() {
+  const { lang } = useContext(LanguageContext);
+
   return (
     <Layout section="about-us">
       <AboutUsContainer>
         <SectionTitle title="sobre nosotros" />
-        {ABOUT_US_DATA.map((about) => (
+        {ABOUT_US_DATA[lang].map((about) => (
           <AboutUsDataContainer key={about.title}>
             <AboutUsDataTitle>{about.title}</AboutUsDataTitle>
             <AboutUsDataParagraph>{about.paragraph}</AboutUsDataParagraph>

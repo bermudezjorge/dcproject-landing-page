@@ -1,60 +1,120 @@
-export const CONTACT_DATA = [
-  {
+const SHARED_CONTACT_DATA = {
+  address: {
     text: "Santiago, Metropolitano de Santiago, Chile",
     important: false,
   },
-  {
+  number: {
     text: "+56946106225",
     important: true,
   },
-  {
+  email: {
     text: "berlysurvey@gmail.com",
     important: true,
   },
-  {
-    text: "Lunes-Viernes",
-    important: false,
-  },
-  {
+  hours: {
     text: "9:00-19:00",
     important: false,
   },
-];
+};
 
-export const FORM_INFO = [
+export const CONTACT_DATA = {
+  es: [
+    { ...SHARED_CONTACT_DATA },
+    {
+      text: "Lunes-Viernes",
+      important: false,
+    },
+  ],
+  en: [
+    { ...SHARED_CONTACT_DATA },
+    {
+      text: "Monday-Friday",
+      important: false,
+    },
+  ],
+};
+
+const SHARED_FORM_INFO = [
   {
     tag: "textarea",
     type: "textarea",
-    label: "¿En que podemos ayudarle?",
-    placeholder: "Escribanos su mensaje",
     required: true,
   },
   {
     tag: "input",
     type: "file",
-    label: "¿Quieres adjuntar un archivo?",
-    placeholder: "",
     required: true,
   },
   {
     tag: "input",
     type: "number",
-    label: "Teléfono de contacto",
-    placeholder: "(Opcional)",
     required: false,
   },
   {
     tag: "input",
     type: "email",
-    label: "Email",
-    placeholder: "Email al cual responderle",
     required: true,
   },
   {
     tag: "input",
     type: "text",
-    label: "¿Cúal es su nombre?",
-    placeholder: "Escriba su nombre",
     required: true,
   },
 ];
+
+export const FORM_INFO = {
+  es: [
+    {
+      ...SHARED_FORM_INFO[0],
+      label: "¿En que podemos ayudarle?",
+      placeholder: "Escribanos su mensaje",
+    },
+    {
+      ...SHARED_FORM_INFO[1],
+      label: "¿Quieres adjuntar un archivo?",
+      placeholder: "",
+    },
+    {
+      ...SHARED_FORM_INFO[2],
+      label: "Teléfono de contacto",
+      placeholder: "(Opcional)",
+    },
+    {
+      ...SHARED_FORM_INFO[3],
+      label: "Email",
+      placeholder: "Email al cual responderle",
+    },
+    {
+      ...SHARED_FORM_INFO[4],
+      label: "¿Cúal es su nombre?",
+      placeholder: "Escriba su nombre",
+    },
+  ],
+  en: [
+    {
+      ...SHARED_FORM_INFO[0],
+      label: "What can we help you?",
+      placeholder: "Write us a message",
+    },
+    {
+      ...SHARED_FORM_INFO[1],
+      label: "Want to upload a file?",
+      placeholder: "",
+    },
+    {
+      ...SHARED_FORM_INFO[2],
+      label: "Contact phone number",
+      placeholder: "(Optional)",
+    },
+    {
+      ...SHARED_FORM_INFO[3],
+      label: "Email",
+      placeholder: "Email to replay",
+    },
+    {
+      ...SHARED_FORM_INFO[4],
+      label: "What's your name?",
+      placeholder: "Write down your name",
+    },
+  ],
+};

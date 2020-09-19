@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { LanguageContext } from "context/languagecontext";
 
 import Layout from "components/Layout";
 import SectionTitle from "components/SectionTitle";
@@ -16,18 +18,21 @@ import {
 import { CONTACT_DATA, FORM_INFO } from "./contactdata";
 
 export default function ContactSection() {
+  const { lang } = useContext(LanguageContext);
+
+  console.log(CONTACT_DATA);
   return (
     <Layout section="contact">
       <SectionTitle title="contacto" />
       <ContactDataContainer>
-        {CONTACT_DATA.map(({ important, text }) => (
+        {CONTACT_DATA[lang].map(({ important, text }) => (
           <ContactData key={text} important={important}>
             {text}
           </ContactData>
         ))}
       </ContactDataContainer>
       <StyledForm>
-        {FORM_INFO.map(({ tag, type, label, placeholder, required }) => {
+        {FORM_INFO[lang].map(({ tag, type, label, placeholder, required }) => {
           if (tag === "input") {
             return (
               <StyledLabel key={label} required={required}>
