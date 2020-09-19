@@ -1,32 +1,32 @@
-const SHARED_CONTACT_DATA = {
-  address: {
+const SHARED_CONTACT_DATA = [
+  {
     text: "Santiago, Metropolitano de Santiago, Chile",
     important: false,
   },
-  number: {
+  {
     text: "+56946106225",
     important: true,
   },
-  email: {
+  {
     text: "berlysurvey@gmail.com",
     important: true,
   },
-  hours: {
+  {
     text: "9:00-19:00",
     important: false,
   },
-};
+];
 
 export const CONTACT_DATA = {
   es: [
-    { ...SHARED_CONTACT_DATA },
+    ...SHARED_CONTACT_DATA,
     {
       text: "Lunes-Viernes",
       important: false,
     },
   ],
   en: [
-    { ...SHARED_CONTACT_DATA },
+    ...SHARED_CONTACT_DATA,
     {
       text: "Monday-Friday",
       important: false,
