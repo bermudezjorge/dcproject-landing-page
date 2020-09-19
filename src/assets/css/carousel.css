@@ -280,3 +280,9 @@
 .carousel:hover .slide .legend {
   opacity: 1;
 }
+
+@media (max-width: 640px) {
+  .carousel.carousel-slider {
+    width: 100% !important;
+  }
+}

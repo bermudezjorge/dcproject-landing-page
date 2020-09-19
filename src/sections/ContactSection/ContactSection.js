@@ -30,14 +30,14 @@ export default function ContactSection() {
         {FORM_INFO.map(({ tag, type, label, placeholder, required }) => {
           if (tag === "input") {
             return (
-              <StyledLabel required={required}>
+              <StyledLabel key={label} required={required}>
                 {label}
                 <StyledInput type={type} placeholder={placeholder} />
               </StyledLabel>
             );
           } else {
             return (
-              <StyledLabel required={required}>
+              <StyledLabel key={label} required={required}>
                 {label}
                 <StyledTextarea placeholder={placeholder}></StyledTextarea>
               </StyledLabel>

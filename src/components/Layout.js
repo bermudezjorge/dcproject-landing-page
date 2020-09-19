@@ -24,6 +24,9 @@ const Container = styled.div`
           position: fixed;
           top: 0;
           z-index: 100;
+          @media (max-width: 640px) {
+            padding: 0 2rem;
+          }
         `;
 
       case "home":

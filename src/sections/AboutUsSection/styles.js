@@ -6,14 +6,18 @@ const AboutUsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  overflow: hidden;
 `;
 
 const AboutUsDataContainer = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   text-align: left;
   color: #000;
+  @media (max-width: 640px) {
+    margin-left: 3rem;
+  }
 `;
 
 const AboutUsDataTitle = styled.h1`
@@ -30,6 +34,9 @@ const AboutUsDataParagraph = styled.p`
   font-size: 16px;
   font-family: "Roboto-Thin";
   font-weight: 900;
+  @media (max-width: 640px) {
+    width: 80%;
+  }
 `;
 
 export {

@@ -21,7 +21,7 @@ const Container = styled.div`
     transform: translateY(-7px);
   }
   &:first-of-type {
-    margin: 0;
+    margin-left: 0;
   }
 `;
 const Img = styled.img`

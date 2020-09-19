@@ -52,6 +52,9 @@ const StyledForm = styled.form`
   padding: 1rem;
   margin: 3rem auto 0 auto;
   border-radius: 7px;
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 `;
 
 const StyledLabel = styled.label`
@@ -73,6 +76,9 @@ const StyledLabel = styled.label`
         font-family: "Roboto-Bold";
       }
     `}
+  @media (max-width: 640px) {
+    font-size: 15px;
+  }
 `;
 
 const StyledInput = styled.input`

@@ -33,6 +33,10 @@ const StyledButton = styled.button`
         break;
     }
   }}
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
 `;
 
 export default function Button({ text, section }) {
