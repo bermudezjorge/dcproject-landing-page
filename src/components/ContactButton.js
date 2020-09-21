@@ -23,7 +23,7 @@ const StyledButtonLink = styled.a`
 export default function ContactButton() {
   return (
     <StyledButtonLink
-      href="https://wa.me/+56946106225"
+      href="https://wa.me/+56946106225?text=%C2%BFEn%20que%20podemos%20ayudarle%3F"
       target="_blank"
       rel="nooponner"
     >
