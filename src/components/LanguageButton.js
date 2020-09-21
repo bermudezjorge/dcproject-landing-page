@@ -18,7 +18,7 @@ const StyledButton = styled.button`
   transition: 0.3s transform;
   @media (max-width: 640px) {
     margin-left: 0;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
   &:focus {
     transform: scale(0.9);

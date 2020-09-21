@@ -4,6 +4,7 @@ import { LanguageContext } from "context/languagecontext";
 
 import Layout from "components/Layout";
 import Logo from "components/Logo";
+import ContactButton from "components/ContactButton";
 import BurguerMenu from "components/BurguerMenu";
 import LinkList from "components/LinkList";
 import LanguageButton from "components/LanguageButton";
@@ -35,6 +36,7 @@ export default function HeaderSection() {
         window.matchMedia("(min-width: 1024px)").matches ? (
           <LinkList section="header" handleMenu={handleMenu} />
         ) : null}
+        <ContactButton />
         <LanguageButton lang={lang} setLang={setLang} />
       </RightSideContainer>
     </Layout>

@@ -28,22 +28,6 @@ const ContactDataContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const ContactData = styled.p`
-  font-size: 15px;
-  font-family: "Roboto-Thin";
-  font-weight: 900;
-  color: #000;
-  margin: 0.3rem 0 0 0;
-  &:first-of-type {
-    margin: 0;
-  }
-  ${({ important }) =>
-    important &&
-    css`
-      color: #0476d0;
-    `}
-`;
-
 const StyledForm = styled.form`
   width: 70%;
   display: flex;
@@ -93,7 +77,6 @@ const StyledTextarea = styled.textarea`
 
 export {
   ContactDataContainer,
-  ContactData,
   StyledForm,
   StyledLabel,
   StyledInput,

@@ -1,18 +1,22 @@
 const SHARED_CONTACT_DATA = [
   {
     text: "Santiago, Metropolitano de Santiago, Chile",
+    icon: "map",
     important: false,
   },
   {
     text: "+56946106225",
+    icon: "phone",
     important: true,
   },
   {
     text: "berlysurvey@gmail.com",
+    icon: "mail-bulk",
     important: true,
   },
   {
     text: "9:00-19:00",
+    icon: "clock",
     important: false,
   },
 ];
@@ -23,6 +27,7 @@ export const CONTACT_DATA = {
     {
       text: "Lunes-Viernes",
       important: false,
+      icon: "calendar",
     },
   ],
   en: [
@@ -30,6 +35,7 @@ export const CONTACT_DATA = {
     {
       text: "Monday-Friday",
       important: false,
+      icon: "calendar",
     },
   ],
 };

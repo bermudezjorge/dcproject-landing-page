@@ -1,15 +1,27 @@
 import React, { useContext } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 import { LinksDataContext } from "context/linkcontext";
 import { LanguageContext } from "context/languagecontext";
 
 import Link from "components/Link";
 
+const appear = keyframes`
+  from {
+    transform: scale(0.7);
+    opacity: 0.1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
 const StyledLinkList = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
+  animation: ${appear} 0.3s;
   & > close {
     display: none;
   }

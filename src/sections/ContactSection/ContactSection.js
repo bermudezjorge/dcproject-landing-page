@@ -4,11 +4,11 @@ import { LanguageContext } from "context/languagecontext";
 
 import Layout from "components/Layout";
 import SectionTitle from "components/SectionTitle";
+import ContactData from "components/ContactData";
 import Button from "components/Button";
 
 import {
   ContactDataContainer,
-  ContactData,
   StyledForm,
   StyledLabel,
   StyledInput,
@@ -24,10 +24,13 @@ export default function ContactSection() {
     <Layout section="contact">
       <SectionTitle title={lang === "es" ? "contacto" : "contact"} />
       <ContactDataContainer>
-        {CONTACT_DATA[lang].map(({ important, text }) => (
-          <ContactData key={text} important={important}>
-            {text}
-          </ContactData>
+        {CONTACT_DATA[lang].map(({ icon, text, important }) => (
+          <ContactData
+            key={text}
+            icon={icon}
+            text={text}
+            important={important}
+          />
         ))}
       </ContactDataContainer>
       <StyledForm>
