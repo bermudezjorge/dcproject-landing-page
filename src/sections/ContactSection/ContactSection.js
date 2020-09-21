@@ -17,11 +17,11 @@ import {
 
 import { CONTACT_DATA, FORM_INFO } from "./contactdata";
 
-export default function ContactSection() {
+export default function ContactSection({ getRef }) {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <Layout section="contact">
+    <Layout section="contact" getRef={getRef}>
       <SectionTitle title={lang === "es" ? "contacto" : "contact"} />
       <ContactDataContainer>
         {CONTACT_DATA[lang].map(({ icon, text, important }) => (
@@ -33,7 +33,7 @@ export default function ContactSection() {
           />
         ))}
       </ContactDataContainer>
-      <StyledForm>
+      <StyledForm netlify>
         {FORM_INFO[lang].map(({ tag, type, label, placeholder, required }) => {
           if (tag === "input") {
             return (

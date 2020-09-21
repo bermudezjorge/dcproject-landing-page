@@ -15,6 +15,11 @@ const StyledLink = styled.li`
   }
 `;
 
-export default function Link({ text }) {
-  return <StyledLink>{text}</StyledLink>;
+export default function Link({ text, section, handleMenu }) {
+  const handleScrollTo = () => {
+    section.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (!!handleMenu) handleMenu(false);
+  };
+
+  return <StyledLink onClick={handleScrollTo}>{text}</StyledLink>;
 }

@@ -10,11 +10,11 @@ import { ServicesContainer } from "./styles";
 
 import SERVICES_DATA from "./servicesdata";
 
-export default function ServicesSection() {
+export default function ServicesSection({ getRef }) {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <Layout section="services">
+    <Layout section="services" getRef={getRef}>
       <SectionTitle title={lang === "es" ? "servicios" : "services"} />
       <ServicesContainer>
         {SERVICES_DATA[lang].map(({ img, title, description }) => (

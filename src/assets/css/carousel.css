@@ -192,8 +192,11 @@
   transition: all 0.35s ease-in-out;
 }
 .carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 100%;
-  height: 400px;
+  height: 370px;
   margin: 0;
   position: relative;
   text-align: center;
@@ -287,5 +290,8 @@
   }
   .carousel.carousel-slider {
     border-radius: 0;
+  }
+  .carousel .slide {
+    height: 280px;
   }
 }

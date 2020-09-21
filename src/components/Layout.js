@@ -56,6 +56,7 @@ const Container = styled.div`
           ${MarginBetweenSection};
           background: #f1f1f1;
           padding: 5rem 0;
+          position: relative;
         `;
 
       case "contact":
@@ -81,7 +82,6 @@ const InnerContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  z-index: 1;
   color: #fff;
 
   ${({ section }) => {
@@ -92,6 +92,11 @@ const InnerContainer = styled.div`
           display: flex;
           justify-content: space-between;
           align-items: center;
+        `;
+
+      case "home":
+        return css`
+          z-index: 1;
         `;
 
       default:

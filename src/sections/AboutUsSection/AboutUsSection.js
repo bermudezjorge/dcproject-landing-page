@@ -15,11 +15,11 @@ import {
 
 import ABOUT_US_DATA from "./aboutusdata";
 
-export default function AboutUsSection() {
+export default function AboutUsSection({ getRef }) {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <Layout section="about-us">
+    <Layout section="about-us" getRef={getRef}>
       <AboutUsContainer>
         <SectionTitle title={lang === "es" ? "sobre nosotros" : "about us"} />
         {ABOUT_US_DATA[lang].map(({ title, paragraph, img }) => (

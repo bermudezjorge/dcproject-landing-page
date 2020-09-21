@@ -9,15 +9,13 @@ import { MostUsedProgramsContainer, MostUsedProgramsTitle } from "./styles";
 
 import PROGRAMS_DATA from "./programsdata";
 
-export default function MostUsedPrograms() {
+export default function MostUsedPrograms({ getRef }) {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <Layout section="most-used-programs">
+    <Layout section="most-used-programs" getRef={getRef}>
       <SectionTitle
-        title={
-          lang === "es" ? "programas más utilizados" : "most used programs"
-        }
+        title={lang === "es" ? "programas más utilizados" : "softwares"}
       />
       <MostUsedProgramsContainer>
         {PROGRAMS_DATA.map((program) => (

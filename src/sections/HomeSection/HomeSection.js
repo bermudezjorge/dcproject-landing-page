@@ -9,11 +9,11 @@ import { HomeBg, HomeTitle, Hr, HomeSubtitle } from "./styles";
 
 import HOME_DATA from "./homedata";
 
-export default function HomeSection() {
+export default function HomeSection({ getRef }) {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <Layout section="home" background={<HomeBg />}>
+    <Layout section="home" getRef={getRef} background={<HomeBg />}>
       <HomeTitle>{HOME_DATA[lang].title}</HomeTitle>
       <Hr />
       <HomeSubtitle>{HOME_DATA[lang].subtitle}</HomeSubtitle>

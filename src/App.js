@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 
 import { LanguageProvider } from "context/languagecontext";
+import { SectionsProvider } from "context/sectionscontext";
+import { ExpandedGalleryImgProvider } from "context/expandedgalleryimgcontext";
 
 import HeaderSection from "sections/HeaderSection";
 import HomeSection from "sections/HomeSection";
@@ -25,9 +27,14 @@ library.add(faWhatsapp, faMap, faPhone, faMailBulk, faClock, faCalendar);
 
 export default function App() {
   const [lang, setLang] = useState("es");
+  const [expandedGalleryImg, setExpandedGalleryImg] = useState(false);
 
-  const headerRef = useRef(null);
-  console.log(headerRef.current);
+  const homeRef = useRef(null);
+  const servicesRef = useRef(null);
+  const aboutUsRef = useRef(null);
+  const mostUsedProgramsRef = useRef(null);
+  const galleryRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <LanguageProvider
@@ -36,14 +43,32 @@ export default function App() {
         setLang,
       }}
     >
-      <HeaderSection getRef={headerRef} />
-      <HomeSection />
-      <ServicesSection />
-      <AboutUsSection />
-      <MostUsedPrograms />
-      <GallerySection />
-      <ContactSection />
-      <FooterSection />
+      <SectionsProvider
+        value={{
+          homeRef,
+          servicesRef,
+          aboutUsRef,
+          mostUsedProgramsRef,
+          galleryRef,
+          contactRef,
+        }}
+      >
+        <ExpandedGalleryImgProvider
+          value={{
+            expandedGalleryImg,
+            setExpandedGalleryImg,
+          }}
+        >
+          <HeaderSection />
+          <HomeSection getRef={homeRef} />
+          <ServicesSection getRef={servicesRef} />
+          <AboutUsSection getRef={aboutUsRef} />
+          <MostUsedPrograms getRef={mostUsedProgramsRef} />
+          <GallerySection getRef={galleryRef} />
+          <ContactSection getRef={contactRef} />
+          <FooterSection />
+        </ExpandedGalleryImgProvider>
+      </SectionsProvider>
     </LanguageProvider>
   );
 }

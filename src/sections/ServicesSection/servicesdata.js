@@ -32,26 +32,26 @@ const SERVICES_DATA = {
   en: [
     {
       img: dibujos,
-      title: "Sketchs 2D, 3D",
+      title: "2D, 3D Drawings",
       description:
-        "We use software tools like Autodesk, specifically AutoCAD, Civil3D.",
+        "We use specialized tools of Autodesk's products, like AutoCAD, Civil 3D.",
     },
     {
       img: digitalizacion,
-      title: "Plans Digitalization",
-      description: "Transferred from paper to digital using Autocad, Revit.",
+      title: "Digital Drawings",
+      description: "We convert hand sketch to AutCAD and Revit formats.",
     },
     {
       img: generacion,
-      title: "Plans Generation",
+      title: "Producing Drawings",
       description:
-        "We elaborate civil, topographic, electrical and architectural plans.",
+        "We create and design electrical drawings, architectural and topographical drawings and more.",
     },
     {
       img: geomatica,
-      title: "Geomatics",
+      title: "Geomatic (SIG)",
       description:
-        "Generate maps using programs like ArcGIS, Global Mapper, QGIS.",
+        "We create maps using apps of SIG: ArcGIS, Global Mapper, Qgis, and more tools. All in spatial data.",
     },
   ],
 };

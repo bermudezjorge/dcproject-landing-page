@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import { LanguageContext } from "context/languagecontext";
+import { ExpandedGalleryImgContext } from "context/expandedgalleryimgcontext";
 
 import Layout from "components/Layout";
 import Logo from "components/Logo";
@@ -13,22 +14,22 @@ import { RightSideContainer } from "./styles";
 
 const BODY = document.querySelector("body");
 
-export default function HeaderSection({ getRef }) {
+export default function HeaderSection() {
   const [showMenu, setShowMenu] = useState(false);
-
   const { lang, setLang } = useContext(LanguageContext);
+  const { setExpandedGalleryImg } = useContext(ExpandedGalleryImgContext);
 
   const handleMenu = (show) => {
     if (show) {
-      BODY.style.overflow = "hidden";
+      BODY.style.overflowY = "hidden";
     } else {
-      BODY.style.overflow = "scroll";
+      BODY.style.overflowY = "scroll";
+      setExpandedGalleryImg(false);
     }
     setShowMenu(show);
   };
-
   return (
-    <Layout section="header" getRef={getRef}>
+    <Layout section="header">
       <Logo>DCproject</Logo>
       <RightSideContainer>
         <BurguerMenu handleMenu={handleMenu} />

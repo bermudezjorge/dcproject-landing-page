@@ -22,6 +22,7 @@ const HomeTitle = styled.h1`
   margin: 0;
   margin-top: 5rem;
   color: #fff;
+  z-index: 1;
 `;
 
 const Hr = styled.hr`
@@ -29,6 +30,7 @@ const Hr = styled.hr`
   width: 120px;
   border: 0;
   border-top: 3px solid #0476d0;
+  z-index: 1;
 `;
 
 const HomeSubtitle = styled.h3`
@@ -41,6 +43,7 @@ const HomeSubtitle = styled.h3`
   text-shadow: 1px 1px 3px #000000a1;
   opacity: 0.8;
   color: #fff;
+  z-index: 1;
 `;
 
 export { HomeBg, HomeTitle, Hr, HomeSubtitle };

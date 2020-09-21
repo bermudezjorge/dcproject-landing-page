@@ -3,6 +3,7 @@ import styled, { css, keyframes } from "styled-components";
 
 import { LinksDataContext } from "context/linkcontext";
 import { LanguageContext } from "context/languagecontext";
+import { SectionsContext } from "context/sectionscontext";
 
 import Link from "components/Link";
 
@@ -89,14 +90,20 @@ const CloseMenu = styled.div`
 export default function LinkList({ section, handleMenu }) {
   const LINKS = useContext(LinksDataContext);
   const { lang } = useContext(LanguageContext);
+  const sectionsRef = useContext(SectionsContext);
 
   return (
     <StyledLinkList section={section}>
-      <CloseMenu role="button" onClick={() => handleMenu(false)}>
+      <CloseMenu role="button" onClick={() => handleMenu(false, "footer")}>
         &times;
       </CloseMenu>
-      {LINKS[lang].map((text) => (
-        <Link key={text} text={text} />
+      {LINKS[lang].map(({ text, section }) => (
+        <Link
+          key={text}
+          text={text}
+          section={sectionsRef[section]}
+          handleMenu={handleMenu}
+        />
       ))}
     </StyledLinkList>
   );
