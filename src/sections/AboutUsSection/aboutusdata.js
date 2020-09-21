@@ -1,3 +1,5 @@
+import how_we_work from "assets/img/about_us/how_we_work.jpg";
+
 const ABOUT_US_DATA = {
   es: [
     {
@@ -12,6 +14,7 @@ const ABOUT_US_DATA = {
       title: "Como trabajamos",
       paragraph: `Online, comunicación con el cliente por video llamada, por
           llamada telefónica y/o correo. A la comodidad de nuestro cliente.`,
+      img: how_we_work,
     },
     {
       title: "Nuestra Meta",

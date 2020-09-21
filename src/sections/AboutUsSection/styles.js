@@ -6,18 +6,15 @@ const AboutUsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  overflow: hidden;
 `;
 
 const AboutUsDataContainer = styled.div`
-  width: 90%;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: left;
   color: #000;
-  @media (max-width: 640px) {
-    margin-left: 3rem;
-  }
 `;
 
 const AboutUsDataTitle = styled.h1`
@@ -39,9 +36,19 @@ const AboutUsDataParagraph = styled.p`
   }
 `;
 
+const AboutUsImg = styled.img`
+  width: 500px;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+`;
+
 export {
   AboutUsContainer,
   AboutUsDataContainer,
   AboutUsDataTitle,
   AboutUsDataParagraph,
+  AboutUsImg,
 };

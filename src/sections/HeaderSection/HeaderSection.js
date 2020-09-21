@@ -13,7 +13,7 @@ import { RightSideContainer } from "./styles";
 
 const BODY = document.querySelector("body");
 
-export default function HeaderSection() {
+export default function HeaderSection({ getRef }) {
   const [showMenu, setShowMenu] = useState(false);
 
   const { lang, setLang } = useContext(LanguageContext);
@@ -28,7 +28,7 @@ export default function HeaderSection() {
   };
 
   return (
-    <Layout section="header">
+    <Layout section="header" getRef={getRef}>
       <Logo>DCproject</Logo>
       <RightSideContainer>
         <BurguerMenu handleMenu={handleMenu} />

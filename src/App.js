@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import { LanguageProvider } from "context/languagecontext";
 
@@ -25,6 +25,10 @@ library.add(faWhatsapp, faMap, faPhone, faMailBulk, faClock, faCalendar);
 
 export default function App() {
   const [lang, setLang] = useState("es");
+
+  const headerRef = useRef(null);
+  console.log(headerRef.current);
+
   return (
     <LanguageProvider
       value={{
@@ -32,7 +36,7 @@ export default function App() {
         setLang,
       }}
     >
-      <HeaderSection />
+      <HeaderSection getRef={headerRef} />
       <HomeSection />
       <ServicesSection />
       <AboutUsSection />

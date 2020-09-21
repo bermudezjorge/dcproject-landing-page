@@ -100,9 +100,9 @@ const InnerContainer = styled.div`
   }}
 `;
 
-export default function Layout({ section, background, children }) {
+export default function Layout({ section, background, getRef, children }) {
   return (
-    <Container section={section}>
+    <Container section={section} ref={getRef}>
       {background && <background.type />}
       <InnerContainer section={section}>{children}</InnerContainer>
     </Container>

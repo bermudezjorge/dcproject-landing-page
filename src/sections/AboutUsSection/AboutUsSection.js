@@ -10,6 +10,7 @@ import {
   AboutUsDataContainer,
   AboutUsDataTitle,
   AboutUsDataParagraph,
+  AboutUsImg,
 } from "./styles";
 
 import ABOUT_US_DATA from "./aboutusdata";
@@ -21,10 +22,11 @@ export default function AboutUsSection() {
     <Layout section="about-us">
       <AboutUsContainer>
         <SectionTitle title={lang === "es" ? "sobre nosotros" : "about us"} />
-        {ABOUT_US_DATA[lang].map((about) => (
-          <AboutUsDataContainer key={about.title}>
-            <AboutUsDataTitle>{about.title}</AboutUsDataTitle>
-            <AboutUsDataParagraph>{about.paragraph}</AboutUsDataParagraph>
+        {ABOUT_US_DATA[lang].map(({ title, paragraph, img }) => (
+          <AboutUsDataContainer key={title}>
+            <AboutUsDataTitle>{title}</AboutUsDataTitle>
+            <AboutUsDataParagraph>{paragraph}</AboutUsDataParagraph>
+            {!!img && <AboutUsImg src={img} />}
           </AboutUsDataContainer>
         ))}
       </AboutUsContainer>

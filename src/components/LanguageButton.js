@@ -35,12 +35,12 @@ export default function LanguageButton({ lang, setLang }) {
       setLang("es");
     }
 
-    setTimeout(() => btnRef.current.blur(), 2000);
+    setTimeout(() => btnRef.current.blur(), 1000);
   };
 
   return (
     <StyledButton onClick={() => handleLanguage()} ref={btnRef}>
-      {lang}
+      {lang === "es" ? "en" : "es"}
     </StyledButton>
   );
 }
