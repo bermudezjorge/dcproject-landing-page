@@ -33,7 +33,7 @@ export default function ContactSection({ getRef }) {
           />
         ))}
       </ContactDataContainer>
-      <StyledForm name="contact" netlify>
+      <StyledForm name="contact" method="POST" data-netlify="true">
         {FORM_INFO[lang].map(
           ({ tag, type, label, name, placeholder, required }) => {
             if (tag === "input") {
