@@ -55,7 +55,7 @@ const SHARED_FORM_INFO = [
     name: "file",
     min: "0",
     max: "0",
-    accept: ".pdf .dwg, .dxf, .shp, .tiff, .kmz, .doc",
+    accept: ".pdf, .dwg, .dxf, .shp, .tiff, .kmz, .doc",
     required: true,
   },
   {
