@@ -33,7 +33,12 @@ export default function ContactSection({ getRef }) {
           />
         ))}
       </ContactDataContainer>
-      <StyledForm name="contact" method="POST" data-netlify="true">
+      <StyledForm
+        name="contact"
+        method="POST"
+        encType="multipart/form-data"
+        data-netlify="true"
+      >
         <input type="hidden" name="form-name" value="contact" />
         {FORM_INFO[lang].map(
           ({
