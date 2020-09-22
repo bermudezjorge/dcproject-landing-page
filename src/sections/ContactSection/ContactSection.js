@@ -36,7 +36,17 @@ export default function ContactSection({ getRef }) {
       <StyledForm name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         {FORM_INFO[lang].map(
-          ({ tag, type, label, name, placeholder, required }) => {
+          ({
+            tag,
+            type,
+            label,
+            name,
+            placeholder,
+            min,
+            max,
+            accept,
+            required,
+          }) => {
             if (tag === "input") {
               return (
                 <StyledLabel key={label} required={required}>
@@ -45,6 +55,10 @@ export default function ContactSection({ getRef }) {
                     type={type}
                     placeholder={placeholder}
                     name={name}
+                    minLength={min}
+                    maxLength={max}
+                    accept={accept && accept}
+                    required={required}
                   />
                 </StyledLabel>
               );
@@ -55,6 +69,9 @@ export default function ContactSection({ getRef }) {
                   <StyledTextarea
                     name={name}
                     placeholder={placeholder}
+                    minLength={min}
+                    maxLength={max}
+                    required={required}
                   ></StyledTextarea>
                 </StyledLabel>
               );
