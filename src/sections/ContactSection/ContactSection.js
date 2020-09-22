@@ -33,24 +33,33 @@ export default function ContactSection({ getRef }) {
           />
         ))}
       </ContactDataContainer>
-      <StyledForm netlify>
-        {FORM_INFO[lang].map(({ tag, type, label, placeholder, required }) => {
-          if (tag === "input") {
-            return (
-              <StyledLabel key={label} required={required}>
-                {label}
-                <StyledInput type={type} placeholder={placeholder} />
-              </StyledLabel>
-            );
-          } else {
-            return (
-              <StyledLabel key={label} required={required}>
-                {label}
-                <StyledTextarea placeholder={placeholder}></StyledTextarea>
-              </StyledLabel>
-            );
+      <StyledForm name="contact" netlify>
+        {FORM_INFO[lang].map(
+          ({ tag, type, label, name, placeholder, required }) => {
+            if (tag === "input") {
+              return (
+                <StyledLabel key={label} required={required}>
+                  {label}
+                  <StyledInput
+                    type={type}
+                    placeholder={placeholder}
+                    name={name}
+                  />
+                </StyledLabel>
+              );
+            } else {
+              return (
+                <StyledLabel key={label} required={required}>
+                  {label}
+                  <StyledTextarea
+                    name={name}
+                    placeholder={placeholder}
+                  ></StyledTextarea>
+                </StyledLabel>
+              );
+            }
           }
-        })}
+        )}
         <Button text={lang === "es" ? "enviar" : "send"} section="contact" />
       </StyledForm>
     </Layout>

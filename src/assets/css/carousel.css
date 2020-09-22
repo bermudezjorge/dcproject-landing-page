@@ -207,6 +207,9 @@
   vertical-align: top;
   border: 0;
 }
+.carousel .slide div {
+  cursor: pointer;
+}
 .carousel .slide iframe {
   display: inline-block;
   width: calc(100% - 80px);

@@ -1,5 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appear = keyframes`
+  0% {
+    transform: scale(0.3);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 const ImgBackground = styled.div`
   width: 100vw;
@@ -12,6 +24,7 @@ const ImgBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 0.3s ${appear};
   & > img {
     width: 100%;
   }

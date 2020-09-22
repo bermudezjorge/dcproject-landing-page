@@ -23,6 +23,9 @@ const AboutUsDataTitle = styled.h1`
   font-size: 25px;
   letter-spacing: 2px;
   font-family: "Roboto-Regular";
+  @media (max-width: 640px) {
+    font-size: 22px;
+  }
 `;
 
 const AboutUsDataParagraph = styled.p`
@@ -38,8 +41,10 @@ const AboutUsDataParagraph = styled.p`
 
 const AboutUsImg = styled.img`
   width: 500px;
-  margin-top: -1rem;
-  margin-bottom: 3rem;
+  margin: 1rem auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
   @media (max-width: 640px) {
     width: 100%;
   }

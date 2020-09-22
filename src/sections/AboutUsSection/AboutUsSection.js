@@ -25,8 +25,11 @@ export default function AboutUsSection({ getRef }) {
         {ABOUT_US_DATA[lang].map(({ title, paragraph, img }) => (
           <AboutUsDataContainer key={title}>
             <AboutUsDataTitle>{title}</AboutUsDataTitle>
-            <AboutUsDataParagraph>{paragraph}</AboutUsDataParagraph>
-            {!!img && <AboutUsImg src={img} />}
+            {paragraph ? (
+              <AboutUsDataParagraph>{paragraph}</AboutUsDataParagraph>
+            ) : (
+              <AboutUsImg src={img} />
+            )}
           </AboutUsDataContainer>
         ))}
       </AboutUsContainer>

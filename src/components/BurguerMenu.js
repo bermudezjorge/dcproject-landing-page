@@ -25,7 +25,7 @@ const BurguerMenuStyles = styled.div`
     left: 0;
     background: #fff;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     display: block;
   }
 `;

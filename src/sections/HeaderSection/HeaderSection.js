@@ -33,8 +33,8 @@ export default function HeaderSection() {
       <Logo>DCproject</Logo>
       <RightSideContainer>
         <BurguerMenu handleMenu={handleMenu} />
-        {(showMenu && window.matchMedia("(max-width: 640px)")).matches ||
-        window.matchMedia("(min-width: 1024px)").matches ? (
+        {(showMenu && window.matchMedia("(max-width: 1024px)")).matches ||
+        window.matchMedia("(min-width: 1025px)").matches ? (
           <LinkList section="header" handleMenu={handleMenu} />
         ) : null}
         <ContactButton />

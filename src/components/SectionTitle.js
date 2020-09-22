@@ -18,7 +18,7 @@ const Title = styled.h1`
   color: #000;
   text-transform: uppercase;
   @media (max-width: 640px) {
-    width: 60%;
+    font-size: 20px;
   }
 `;
 

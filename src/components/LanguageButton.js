@@ -16,7 +16,7 @@ const StyledButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s transform;
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     margin-left: 0;
     margin-right: 1rem;
   }

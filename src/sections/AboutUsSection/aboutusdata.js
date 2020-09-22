@@ -9,6 +9,9 @@ const ABOUT_US_DATA = {
     {
       title: "Como trabajamos",
       paragraph: `Online, comunicación con el cliente por video llamada, por llamada telefónica y/o correo. A la comodidad de nuestro cliente.`,
+    },
+    {
+      title: "Nuestro Proceso de Trabajo",
       img: how_we_work,
     },
     {
@@ -24,6 +27,10 @@ const ABOUT_US_DATA = {
     {
       title: "How we work",
       paragraph: `Online, communication with the client by video call, by phone call and email. According to the comfort of our client.`,
+    },
+    {
+      title: "Our work process",
+      img: how_we_work,
     },
     {
       title: "Our goal",

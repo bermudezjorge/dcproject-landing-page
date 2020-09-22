@@ -44,26 +44,31 @@ const SHARED_FORM_INFO = [
   {
     tag: "textarea",
     type: "textarea",
+    name: "message",
     required: true,
   },
   {
     tag: "input",
     type: "file",
+    name: "file",
     required: true,
   },
   {
     tag: "input",
     type: "number",
+    name: "phone",
     required: false,
   },
   {
     tag: "input",
     type: "email",
+    name: "email",
     required: true,
   },
   {
     tag: "input",
     type: "text",
+    name: "name",
     required: true,
   },
 ];

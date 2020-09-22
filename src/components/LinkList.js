@@ -31,7 +31,7 @@ const StyledLinkList = styled.ul`
     switch (section) {
       case "header":
         return css`
-          @media (max-width: 640px) {
+          @media (max-width: 1024px) {
             width: 100vw;
             height: 100vh;
             background: #000;
@@ -82,7 +82,7 @@ const CloseMenu = styled.div`
   fill: #fff;
   font-family: "Roboto-Bold";
   font-size: 40px;
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     display: block;
   }
 `;

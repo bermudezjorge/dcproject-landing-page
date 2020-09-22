@@ -2,7 +2,12 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 const MarginBetweenSection = css`
-  margin-top: 7rem;
+  margin-top: 3.5rem;
+`;
+
+const GraySectionStyles = css`
+  padding: 3rem 0;
+  background: #f1f1f1;
 `;
 
 const Container = styled.div`
@@ -44,8 +49,7 @@ const Container = styled.div`
       case "about-us":
         return css`
           ${MarginBetweenSection};
-          background: #f1f1f1;
-          padding: 5rem 0;
+          ${GraySectionStyles};
         `;
 
       case "most-used-programs":
@@ -54,8 +58,7 @@ const Container = styled.div`
       case "gallery":
         return css`
           ${MarginBetweenSection};
-          background: #f1f1f1;
-          padding: 5rem 0;
+          ${GraySectionStyles};
           position: relative;
         `;
 
@@ -64,7 +67,7 @@ const Container = styled.div`
 
       case "footer":
         return css`
-          margin-top: 7rem;
+          margin-top: 5rem;
           padding: 2rem 0;
           justify-content: center;
           align-items: center;

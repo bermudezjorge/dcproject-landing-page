@@ -14,7 +14,7 @@ const StyledButtonLink = styled.a`
   margin-left: 1.5rem;
   color: #00e676;
   text-decoration: none;
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     margin-left: 0;
     margin-right: 1rem;
   }

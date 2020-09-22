@@ -15,14 +15,25 @@ const HomeBg = styled.div`
   z-index: 0;
 `;
 
+const HomeDataContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const HomeTitle = styled.h1`
   font-size: 45px;
   font-family: "Roboto-Bold";
   font-weight: 900;
   margin: 0;
-  margin-top: 5rem;
   color: #fff;
   z-index: 1;
+  @media (min-width: 1025px) {
+    margin-top: 5rem;
+  }
 `;
 
 const Hr = styled.hr`
@@ -34,7 +45,7 @@ const Hr = styled.hr`
 `;
 
 const HomeSubtitle = styled.h3`
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Roboto-Regular";
   font-weight: 500;
   letter-spacing: 2px;
@@ -44,6 +55,11 @@ const HomeSubtitle = styled.h3`
   opacity: 0.8;
   color: #fff;
   z-index: 1;
+  @media (max-width: 640px) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
-export { HomeBg, HomeTitle, Hr, HomeSubtitle };
+export { HomeBg, HomeDataContainer, HomeTitle, Hr, HomeSubtitle };
